@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@font-face {
+    font-family: AnkhSanctuary;
+    src: url(./assets/fonts/ankh-sanctuary-font/AnkhSanctuary-nROx4.ttf);
+}
+
+@font-face {
+    font-family: NeonFuture20;
+    src: url(./assets/fonts/neon-future-2-font/NeonFuture20Demo-L3jp3.otf);
+}
+
+@font-face {
+    font-family: Aquire;
+    src: url(./assets/fonts/aquire-font/Aquire-BW0ox.otf);
+}
+
+body {
+    background-color: #25272c;
+    font-family: AnkhSanctuary;
+    color: white;
+}
+
+nav {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #3f353e;
+    position: sticky;
+}
+
+nav .nav_element {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+nav .nav_element:hover {
+    background-color: #574d56;
+}
+
+nav .nav_element span {
+    font-size: x-large;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+#title {
+    max-block-size: 50vh;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+}
+
+#title .presentation_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title .presentation_area .logo {
+    padding-left: 45px;
+}
+
+#title .presentation_area .logo img {
+    border-radius: 12px;
+    max-width: calc(12vh + 5vw);
+    box-shadow: 1.5em 1em 1em red,
+        -1.5em -1em 1em white,
+        1.5em -1em 2em black,
+        -1.5em 1em 2em black;
+}
+
+#title .presentation_area .presentation {
+    padding-right: calc(40px + 5vw);
+}
+
+#title .presentation_area .presentation h1 {
+    font-size: 8vh;
+    text-align: center;
+}
+
+#title .presentation_area .presentation .presentation-text {
+    font-size: 4vh;
+    padding-top: auto;
+    font-family: Aquire;
+    padding-bottom: calc(12vh + 5vw);
+    text-align: center;
+}
+
+.dud {
+    color: #757575;
+    padding: 0;
+    margin: 0;
+}
+
+
+#page_content {
+    top: 38vh;
+    position: relative;
+}
+
+
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(29, 29, 29, 0.856),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.329),
+        4px 4px 5px 0px rgba(0, 0, 0, .329);
+    outline: none;
+}
+
+.btn-16 {
+    border: none;
+    color: white;
+}
+
+.btn-16:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+        -7px -7px 20px 0px #2d303509,
+        -4px -4px 5px 0px #2b2e33ab,
+        7px 7px 20px 0px #090a0a,
+        4px 4px 5px 0px #161618;
+    transition: all 0.3s ease;
+}
+
+.btn-16:hover {
+    color: red;
+}
+
+.btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+.btn-16:active {
+    top: 2px;
+}
