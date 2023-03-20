@@ -66,7 +66,9 @@ const phrases = [
   '98,79% d\'uptime',
   'Anti-DDoS puissant',
   'Rapide et fiable',
-  'Python, JS et Java'
+  'Python, JS et Java',
+  'Support 24/7',
+  'Sécurisé et sûr',
 ];
 
 
